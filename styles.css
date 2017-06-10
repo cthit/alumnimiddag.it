@@ -1,0 +1,47 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+}
+
+.fance {
+  font-family: 'Great Vibes', cursive;
+}
+
+.question-container {
+  padding: 0 0 2em;
+}
+
+.question {
+  font-weight: bold;
+  display: block;
+}
+
+.text-container {
+  padding: 1em 2em;
+}
+
+.bgimg {
+  font-family: 'Great Vibes', cursive;
+  color: white;
+  font-size: 72pt;
+  text-align: center;
+}
+
+.bgimg1 {
+  background-color: black;
+  background-image: url("img/AndreasPegelow1.jpg");
+  background-size: cover;
+  height: 100vh;
+  line-height: 100vh;
+}
