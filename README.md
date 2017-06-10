@@ -1,2 +1,3 @@
 # alumnimiddag.it
-Hemside-kod för alumnimiddag.it som vi ska använda som landing page för alumnimiddagen
+
+Website for Alumnimiddagen page which is organized by the Student Division of IT
