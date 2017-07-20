@@ -5,8 +5,9 @@ html, body {
 body {
   margin: 0;
   color: #333;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14pt;
+  background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,34 +15,187 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.fance {
-  font-family: 'Great Vibes', cursive;
+a {
+  color: #d21111;
 }
 
-.question-container {
-  padding: 0 0 2em;
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin-x: 100%;
+}
+.parallax__group {
+  position: relative;
+  min-height: 100vh;
+  transform-style: preserve-3d;
+}
+.parallax__group--back {
+  z-index: -1;
+}
+.parallax__group.parallax__group--last {
+  min-height: auto;
+}
+.parallax__layer {
+  transform-origin-x: 100%;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
 }
 
-.question {
-  font-weight: bold;
-  display: block;
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+}
+.bg1 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/AndreasPegelow1.jpg");
+}
+.bg2 {
+  background-image: url("img/KatarinaBergbom1.jpg");
+}
+.bg3 {
+  background-image: url("img/AndreasPegelow2.jpg");
+}
+.cred {
+  position: absolute;
+  font-size: .5em;
+  color: rgba(255,255,255,.5);
+  top: 1em;
+  right: 1em;
 }
 
-.text-container {
-  padding: 1em 2em;
-}
-
-.bgimg {
-  font-family: 'Great Vibes', cursive;
+.header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
-  font-size: 72pt;
+  text-shadow: 0 0 10px black;
+}
+.header p {
+  font-size: 2em;
+}
+.header img {
+  margin-bottom: 1em;
+  width: 5em;
+}
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 6em;
   text-align: center;
 }
 
-.bgimg1 {
-  background-color: black;
-  background-image: url("img/AndreasPegelow1.jpg");
-  background-size: cover;
-  height: 100vh;
-  line-height: 100vh;
+.page {
+  background-color: #fafafa;
+}
+.text-container {
+  padding: 1em 2em;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.registration {
+  text-align: center;
+  padding: 1em;
+  margin: 2em 0;
+  box-shadow: 0px 1px 6px rgba(0,0,0,.5);
+  background-color: #fffdf6;
+}
+.note {
+  font-size: 0.8em;
+  color: #555;
+}
+.btn {
+  background-color: #d21111;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.5);
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.question {
+  font-weight: 700;
+}
+.answer {
+  margin-bottom: 2em;
+}
+
+.email-address::after {
+  content: "alumnimiddagsansvariga@chalmers.it";
+}
+
+.contact-pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin: 2em 0 1em;
+}
+.contact-picture {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    text-align: center;
+  }
+  h1::before {
+    content: "- ";
+  }
+  h1::after {
+    content: " -";
+  }
+
+  .title {
+    font-size: 4em;
+  }
+  .header p {
+    font-size: 1.5em;
+  }
+
+  .text-container {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+    margin: 2em 0 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 3em;
+  }
+  .header p {
+    font-size: 1em;
+  }
+
+  .email-address::after {
+    content: "alumnimiddag@chalmers.it";
+  }
+}
+
+@media (max-width: 300px) {
+  .email-address::after {
+    content: "ama@chalmers.it";
+  }
 }
