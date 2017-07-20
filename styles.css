@@ -143,6 +143,9 @@ a {
   grid-gap: 1em;
   margin: 2em 0 1em;
 }
+.contact {
+    text-align: center;
+}
 .contact-picture {
     border-radius: 50%;
     max-width: 100%;
