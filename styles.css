@@ -103,6 +103,16 @@ a {
   margin: 0 auto;
 }
 
+.omg {
+  text-align: center;
+  padding: 1em;
+  margin: 2em 0;
+  border: dashed 1px #354a9c;
+  background-color: #eff;
+}
+.omg h1 {
+  color: #354a9c;
+}
 .registration {
   text-align: center;
   padding: 1em;
