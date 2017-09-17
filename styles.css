@@ -113,6 +113,9 @@ a {
 .omg h1 {
   color: #354a9c;
 }
+.no-can-do {
+  color: red;
+}
 .registration {
   text-align: center;
   padding: 1em;
